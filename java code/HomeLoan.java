@@ -14,14 +14,14 @@ public class HomeLoan extends LoanApplication implements Approvable {
         if (getAmount() <= 0) {
             throw new LoanException("Amount must be positive for HomeLoan.");
         }
-        // Additional structural validations can go here in real systems
+
         return true;
     }
 
     @Override
     @AuditLog
     public LoanStatus evaluateRisk() {
-        // Business rule: approve if amount < ₹50 lakhs (5,000,000)
+        
         return (getAmount() < 5_000_000) ? LoanStatus.APPROVED : LoanStatus.REJECTED;
     }
 }
