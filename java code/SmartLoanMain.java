@@ -67,7 +67,7 @@ public class SmartLoanMain {
         String name = sc.nextLine();
         System.out.print("Enter loan amount (₹): ");
         double amount = sc.nextDouble();
-        sc.nextLine(); // consume newline
+        sc.nextLine();
         LoanApplication loan = new HomeLoan(name, amount);
         processLoan(loan);
     }
@@ -77,7 +77,7 @@ public class SmartLoanMain {
         String name = sc.nextLine();
         System.out.print("Enter loan amount (₹): ");
         double amount = sc.nextDouble();
-        sc.nextLine(); // consume newline
+        sc.nextLine(); 
         LoanApplication loan = new PersonalLoan(name, amount);
         processLoan(loan);
     }
