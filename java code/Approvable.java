@@ -4,7 +4,6 @@ public interface Approvable {
     LoanStatus evaluateRisk();
 
     default void printDecision() {
-        // By contract, classes implementing this also extend LoanApplication.
         LoanApplication app = (LoanApplication) this;
         LoanStatus result = evaluateRisk();
         app.setStatus(result);
