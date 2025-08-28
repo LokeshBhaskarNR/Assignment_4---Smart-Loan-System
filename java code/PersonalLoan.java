@@ -20,7 +20,7 @@ public class PersonalLoan extends LoanApplication implements Approvable {
     @Override
     @AuditLog
     public LoanStatus evaluateRisk() {
-        // Business rule: reject if amount > ₹5 lakhs (500,000)
+       
         return (getAmount() > 500_000) ? LoanStatus.REJECTED : LoanStatus.APPROVED;
     }
 }
