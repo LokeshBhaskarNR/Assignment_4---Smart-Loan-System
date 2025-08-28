@@ -16,7 +16,7 @@ public abstract class LoanApplication {
     private LoanStatus status;
 
     protected LoanApplication(String customerName, double amount, LoanType type, LoanStatus initialStatus) {
-        this.applicationId = ++COUNTER; // static counter
+        this.applicationId = ++COUNTER; 
         this.customerName = customerName;
         this.amount = amount;
         this.type = Objects.requireNonNull(type, "LoanType cannot be null");
@@ -29,7 +29,6 @@ public abstract class LoanApplication {
         this.status = LoanStatus.PENDING;
     }
 
-    // Protected so Approvable.default can set it
     protected void setStatus(LoanStatus status) {
         this.status = status;
     }
