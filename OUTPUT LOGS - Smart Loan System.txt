@@ -1,0 +1,146 @@
+
+=== Smart Loan System ===
+1. Apply for Home Loan
+2. Apply for Personal Loan
+3. View Processed Applications
+4. View Failed Applications
+5. View Audit Logged Methods
+6. Exit
+
+Enter Your Choice : 
+1
+Enter customer name: lokesh b
+Enter loan amount (₹): 4800000
+SmartLoan System initialized.
+Decision for Application #1001 (HOME, ₹4800000.00): APPROVED
+
+=== Smart Loan System ===
+1. Apply for Home Loan
+2. Apply for Personal Loan
+3. View Processed Applications
+4. View Failed Applications
+5. View Audit Logged Methods
+6. Exit
+
+Enter Your Choice : 
+1
+Enter customer name: nayana
+Enter loan amount (₹): 6000000
+Decision for Application #1002 (HOME, ₹6000000.00): REJECTED
+
+=== Smart Loan System ===
+1. Apply for Home Loan
+2. Apply for Personal Loan
+3. View Processed Applications
+4. View Failed Applications
+5. View Audit Logged Methods
+6. Exit
+
+Enter Your Choice : 
+2
+Enter customer name: vallabh
+Enter loan amount (₹): 350000
+Decision for Application #1003 (PERSONAL, ₹350000.00): APPROVED
+
+=== Smart Loan System ===
+1. Apply for Home Loan
+2. Apply for Personal Loan
+3. View Processed Applications
+4. View Failed Applications
+5. View Audit Logged Methods
+6. Exit
+
+Enter Your Choice : 
+2
+Enter customer name: kumar
+Enter loan amount (₹): 900000
+Decision for Application #1004 (PERSONAL, ₹900000.00): REJECTED
+
+=== Smart Loan System ===
+1. Apply for Home Loan
+2. Apply for Personal Loan
+3. View Processed Applications
+4. View Failed Applications
+5. View Audit Logged Methods
+6. Exit
+
+Enter Your Choice : 
+2
+Enter customer name: lakshman
+Enter loan amount (₹): 100000
+Decision for Application #1005 (PERSONAL, ₹100000.00): APPROVED
+
+=== Smart Loan System ===
+1. Apply for Home Loan
+2. Apply for Personal Loan
+3. View Processed Applications
+4. View Failed Applications
+5. View Audit Logged Methods
+6. Exit
+
+Enter Your Choice : 
+1
+Enter customer name: neha singh
+Enter loan amount (₹): -1000
+Validation/Processing failed for #1006 (HomeLoan): Amount must be positive for HomeLoan.
+
+=== Smart Loan System ===
+1. Apply for Home Loan
+2. Apply for Personal Loan
+3. View Processed Applications
+4. View Failed Applications
+5. View Audit Logged Methods
+6. Exit
+
+Enter Your Choice : 
+3
+
+=== Processed HOME Applications ===
+LoanApplication{id=1001, customer='lokesh b', amount=₹4800000.00, type=HOME, status=APPROVED}
+LoanApplication{id=1002, customer='nayana', amount=₹6000000.00, type=HOME, status=REJECTED}
+
+=== Processed PERSONAL Applications ===
+LoanApplication{id=1005, customer='lakshman', amount=₹100000.00, type=PERSONAL, status=APPROVED}
+LoanApplication{id=1003, customer='vallabh', amount=₹350000.00, type=PERSONAL, status=APPROVED}
+LoanApplication{id=1004, customer='kumar', amount=₹900000.00, type=PERSONAL, status=REJECTED}
+
+=== Smart Loan System ===
+1. Apply for Home Loan
+2. Apply for Personal Loan
+3. View Processed Applications
+4. View Failed Applications
+5. View Audit Logged Methods
+6. Exit
+
+Enter Your Choice : 
+4
+
+=== Failed/Invalid Applications ===
+LoanApplication{id=1006, customer='neha singh', amount=₹-1000.00, type=HOME, status=PENDING}
+
+=== Smart Loan System ===
+1. Apply for Home Loan
+2. Apply for Personal Loan
+3. View Processed Applications
+4. View Failed Applications
+5. View Audit Logged Methods
+6. Exit
+
+Enter Your Choice : 
+5
+
+=== Audit Logged Methods ===
+HomeLoan.evaluateRisk()
+PersonalLoan.evaluateRisk()
+
+=== Smart Loan System ===
+1. Apply for Home Loan
+2. Apply for Personal Loan
+3. View Processed Applications
+4. View Failed Applications
+5. View Audit Logged Methods
+6. Exit
+
+Enter Your Choice : 
+6
+Exiting Smart Loan System
